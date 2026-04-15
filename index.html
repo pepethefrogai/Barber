@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!-- Image files to replace: images/hero-bg.jpg (hero background), images/shop-front.jpg (welcome section) -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northline Barbers | Premium Barber Shop</title>
+  <title data-title></title>
   <meta
     name="description"
     content="Premium local barber shop offering sharp cuts, beard trims, and easy online booking."
@@ -17,13 +18,16 @@
   />
 
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-name">Northline</span>
-        <span class="brand-tag">Barbers</span>
+        <img src="" alt="Logo" class="brand-logo" data-logo-src>
+        <span class="brand-name" data-shop-name></span>
+        <span class="brand-tag" data-shop-tag></span>
       </a>
 
       <nav class="nav">
@@ -35,8 +39,16 @@
       </nav>
 
       <div class="header-actions">
-        <a href="tel:01610000000" class="btn btn-secondary">Call Now</a>
-        <a href="booking.html" class="btn btn-primary">Book Now</a>
+        <a href="#" class="btn btn-secondary" data-phone-link>Call Now</a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+          data-booking-link
+        >
+          Book Now
+        </a>
       </div>
     </div>
   </header>
@@ -46,14 +58,20 @@
       <div class="container">
         <div class="hero-content">
           <span class="eyebrow">Premium Local Barber Shop</span>
-          <h1>Sharp Cuts. Clean Finish. Easy Booking.</h1>
-          <p>
-            Modern barbering with a classic standard. From fresh fades to beard work,
-            we keep it precise, professional, and easy to book.
+          <h1 data-hero-title></h1>
+          <p data-hero-text>
           </p>
 
           <div class="hero-actions">
-            <a href="booking.html" class="btn btn-primary">Book Your Appointment</a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              data-booking-link
+            >
+              Book Your Appointment
+            </a>
             <a href="tel:01610000000" class="btn btn-secondary">Call the Shop</a>
           </div>
 
@@ -71,18 +89,23 @@
         <div class="welcome-grid">
           <div class="welcome-card">
             <span class="eyebrow">Welcome</span>
-            <h2 class="section-title">Welcome to Northline Barbers</h2>
-            <p>
-              A professional local barbershop focused on quality cuts, clean service,
-              and a smooth customer experience from the minute you land on the site
-              to the minute you leave the chair.
+            <h2 class="section-title" data-welcome-title></h2>
+            <p data-welcome-text>
             </p>
-            <a href="booking.html" class="btn btn-primary">Book Now</a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              data-booking-link
+            >
+              Book Now
+            </a>
           </div>
 
           <div class="welcome-image">
             <img
-              src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1200&q=80"
+              src="images/shop-front.png"
               alt="Exterior of the barber shop"
             />
           </div>
@@ -97,46 +120,7 @@
             <span class="eyebrow">Services</span>
             <h3>Prices</h3>
 
-            <div class="price-list">
-              <div class="price-item">
-                <div>
-                  <div class="price-name">Haircut</div>
-                  <div class="price-desc">Clean, tailored cut finished to your style.</div>
-                </div>
-                <div class="price-value">£18</div>
-              </div>
-
-              <div class="price-item">
-                <div>
-                  <div class="price-name">Skin Fade</div>
-                  <div class="price-desc">Sharp fade with detailed blend and finish.</div>
-                </div>
-                <div class="price-value">£22</div>
-              </div>
-
-              <div class="price-item">
-                <div>
-                  <div class="price-name">Beard Trim</div>
-                  <div class="price-desc">Shape-up, tidy, and clean finish.</div>
-                </div>
-                <div class="price-value">£10</div>
-              </div>
-
-              <div class="price-item">
-                <div>
-                  <div class="price-name">Haircut & Beard</div>
-                  <div class="price-desc">Full service, most popular appointment.</div>
-                </div>
-                <div class="price-value">£26</div>
-              </div>
-
-              <div class="price-item">
-                <div>
-                  <div class="price-name">Kids Cut</div>
-                  <div class="price-desc">Fresh cuts for younger clients.</div>
-                </div>
-                <div class="price-value">£14</div>
-              </div>
+            <div class="price-list" id="price-list">
             </div>
           </div>
 
@@ -187,7 +171,15 @@
             <p>Book your appointment now and lock in your slot.</p>
           </div>
 
-          <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            data-booking-link
+          >
+            Book Appointment
+          </a>
         </div>
       </div>
     </section>
@@ -195,18 +187,17 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Northline Barbers. All rights reserved.</p>
+      <p data-copyright></p>
 
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="team.html">Team</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-        <a href="#">Instagram</a>
+        <a href="#" data-instagram-link>Instagram</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

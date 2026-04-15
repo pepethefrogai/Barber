@@ -1,0 +1,1 @@
+// Main JS file - injection logic moved to config.js

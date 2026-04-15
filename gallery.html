@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!-- Image files to replace: images/gallery-1.jpg through images/gallery-6.jpg -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Northline Barbers</title>
+  <title data-title>Gallery | </title>
   <meta name="description" content="Browse the Northline Barbers gallery." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,13 +15,16 @@
   />
 
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-name">Northline</span>
-        <span class="brand-tag">Barbers</span>
+        <img src="" alt="Logo" class="brand-logo" data-logo-src>
+        <span class="brand-name" data-shop-name></span>
+        <span class="brand-tag" data-shop-tag></span>
       </a>
 
       <nav class="nav">
@@ -32,8 +36,16 @@
       </nav>
 
       <div class="header-actions">
-        <a href="tel:01610000000" class="btn btn-secondary">Call Now</a>
-        <a href="booking.html" class="btn btn-primary">Book Now</a>
+        <a href="#" class="btn btn-secondary" data-phone-link>Call Now</a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+          data-booking-link
+        >
+          Book Now
+        </a>
       </div>
     </div>
   </header>
@@ -53,22 +65,22 @@
       <div class="container">
         <div class="gallery-grid">
           <div class="gallery-item tall">
-            <img src="https://images.unsplash.com/photo-1512690459411-b0fd40c8ed0c?auto=format&fit=crop&w=1000&q=80" alt="Haircut close-up" />
+            <img src="images/gallery-1.jpg" alt="Haircut close-up" />
           </div>
           <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=80" alt="Barber cutting hair" />
+            <img src="images/gallery-2.jpg" alt="Barber cutting hair" />
           </div>
           <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80" alt="Barber tools" />
+            <img src="images/gallery-3.jpg" alt="Barber tools" />
           </div>
           <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&q=80" alt="Barber chair and shop interior" />
+            <img src="images/gallery-4.jpg" alt="Barber chair and shop interior" />
           </div>
           <div class="gallery-item wide">
-            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=80" alt="Client haircut result" />
+            <img src="images/gallery-5.jpg" alt="Client haircut result" />
           </div>
           <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?auto=format&fit=crop&w=1000&q=80" alt="Professional barber shop interior" />
+            <img src="images/gallery-6.jpg" alt="Professional barber shop interior" />
           </div>
         </div>
       </div>
@@ -81,7 +93,15 @@
             <h3>Like what you see?</h3>
             <p>Book in and get your next cut done properly.</p>
           </div>
-          <a href="booking.html" class="btn btn-primary">Book Appointment</a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            data-booking-link
+          >
+            Book Appointment
+          </a>
         </div>
       </div>
     </section>
@@ -89,17 +109,16 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Northline Barbers. All rights reserved.</p>
+      <p data-copyright></p>
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="team.html">Team</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-        <a href="#">Instagram</a>
+        <a href="#" data-instagram-link>Instagram</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

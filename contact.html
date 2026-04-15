@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Northline Barbers</title>
+  <title data-title>Contact | </title>
   <meta name="description" content="Contact Northline Barbers for appointments and enquiries." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,13 +14,16 @@
   />
 
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-name">Northline</span>
-        <span class="brand-tag">Barbers</span>
+        <img src="" alt="Logo" class="brand-logo" data-logo-src>
+        <span class="brand-name" data-shop-name></span>
+        <span class="brand-tag" data-shop-tag></span>
       </a>
 
       <nav class="nav">
@@ -32,8 +35,16 @@
       </nav>
 
       <div class="header-actions">
-        <a href="tel:01610000000" class="btn btn-secondary">Call Now</a>
-        <a href="booking.html" class="btn btn-primary">Book Now</a>
+        <a href="#" class="btn btn-secondary" data-phone-link>Call Now</a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary"
+          data-booking-link
+        >
+          Book Now
+        </a>
       </div>
     </div>
   </header>
@@ -42,9 +53,8 @@
     <section class="page-hero">
       <div class="container">
         <span class="eyebrow">Contact</span>
-        <h1 class="page-title">Find Us, Call Us, Book In</h1>
-        <p class="page-subtitle">
-          Everything you need to get in touch or visit the shop.
+        <h1 class="page-title" data-contact-title></h1>
+        <p class="page-subtitle" data-contact-text>
         </p>
       </div>
     </section>
@@ -59,30 +69,36 @@
             <div class="contact-list">
               <div class="contact-item">
                 <strong>Phone</strong>
-                <a href="tel:01610000000">0161 000 0000</a>
+                <a href="#" data-phone-link-display></a>
               </div>
 
               <div class="contact-item">
                 <strong>Email</strong>
-                <a href="mailto:hello@northlinebarbers.co.uk">hello@northlinebarbers.co.uk</a>
+                <a href="#" data-email-link></a>
               </div>
 
               <div class="contact-item">
                 <strong>Address</strong>
-                <span>123 Example Street, Manchester, M1 1AA</span>
+                <span data-address></span>
               </div>
 
               <div class="contact-item">
                 <strong>Opening Hours</strong>
-                <span>Mon–Fri: 9:00am – 7:00pm</span>
-                <span>Sat: 9:00am – 5:00pm</span>
-                <span>Sun: Closed</span>
+                <span data-opening-hours></span>
               </div>
             </div>
 
             <div class="button-row">
-              <a href="tel:01610000000" class="btn btn-secondary">Call Now</a>
-              <a href="booking.html" class="btn btn-primary">Book Now</a>
+              <a href="#" class="btn btn-secondary" data-phone-link>Call Now</a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                data-booking-link
+              >
+                Book Now
+              </a>
             </div>
           </div>
 
@@ -92,7 +108,8 @@
 
             <div class="map-frame">
               <iframe
-                src="https://www.google.com/maps?q=Manchester&output=embed"
+                src="#"
+                data-map-embed-url
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 title="Barber shop location map"
@@ -110,17 +127,16 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Northline Barbers. All rights reserved.</p>
+      <p data-copyright></p>
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="team.html">Team</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-        <a href="#">Instagram</a>
+        <a href="#" data-instagram-link>Instagram</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
